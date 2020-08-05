@@ -40,7 +40,7 @@ function CadastroCategoria() {
       >
 
         <FormField
-          label="Nome da Categoria"          
+          label="Nome da Categoria"
           name="name"
           value={values.name}
           onChange={handlerChangeInput}
