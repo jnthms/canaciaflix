@@ -40,7 +40,7 @@ function CadastroCategoria() {
       >
 
         <FormField
-          label="Nome da Categoria"
+          label="Nome da Categoria:"
           name="name"
           value={values.name}
           onChange={handlerChangeInput}
@@ -55,7 +55,7 @@ function CadastroCategoria() {
         />
 
         <FormField
-          label="Cor"
+          label="Cor:"
           type="color"
           name="color"
           value={values.color}
@@ -66,8 +66,8 @@ function CadastroCategoria() {
       </form>
 
       <ul>
-        {categorias.map((categoria, index) => (
-          <li key={`${categoria}${index}`}>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
             {categoria.name}
           </li>
         ))}
